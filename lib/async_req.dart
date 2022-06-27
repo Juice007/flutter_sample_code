@@ -3,29 +3,29 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 void main() {
-  runApp(const SampleApp());
+  runApp(const AsyncReqApp());
 }
 
-class SampleApp extends StatelessWidget {
-  const SampleApp({Key? key}) : super(key: key);
+class AsyncReqApp extends StatelessWidget {
+  const AsyncReqApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Sample App',
-      home: SampleAppPage(),
+      home: AsyncReqAppPage(),
     );
   }
 }
 
-class SampleAppPage extends StatefulWidget {
-  const SampleAppPage({Key? key}) : super(key: key);
+class AsyncReqAppPage extends StatefulWidget {
+  const AsyncReqAppPage({Key? key}) : super(key: key);
 
   @override
-  _SampleAppPageState createState() => _SampleAppPageState();
+  _AsyncReqAppPageState createState() => _AsyncReqAppPageState();
 }
 
-class _SampleAppPageState extends State<SampleAppPage> {
+class _AsyncReqAppPageState extends State<AsyncReqAppPage> {
   List<Map<String, dynamic>> data = <Map<String, dynamic>>[];
 
   @override
